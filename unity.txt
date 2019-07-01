@@ -1,0 +1,8 @@
+・クラスのインスタンス化はGetComponentを使う　new classname();は使えない。
+・rigitの速度は実際の速度とは違う。
+・ビルド後に動的に外部ファイルを読み込む場合、Assetsファイル内に
+StreamingAssetsを作るとビルド後の相対パスの静的変数が取れる。詳細https://www.urablog.xyz/entry/2018/02/18/212849
+・csvを読み取るhttps://note.mu/macgyverthink/n/n83943f3bad60
+・canvas内の描画順はヒエラルキーウインドウの上から描画される。この順番を変えると
+描画順を変えられる。ヒエラルキーウインドウのソートをアルファベット順しておくとエディタ上でこの動作ができない
+上記よりスクリプトから動的に変更も可能。参考http://albatrus.com/main/unity/7402

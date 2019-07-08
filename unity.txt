@@ -8,3 +8,4 @@ StreamingAssetsを作るとビルド後の相対パスの静的変数が取れる。詳細https://www.ura
 ・アップデートでエラーが吐かれるときFailed to resolve packages: 404 Not Found: com.unity.timeline. No packages loaded.
 packages/manifest.jsonを初期状態に戻す。そしてエディタを再起動すると直る。
 ・new ClassName();でクラスをインスタンスするとプロパティが動かない。メゾットは動く。GetComponent<>を使う
+・Update()終了時にオブジェクトの描画が行われるのでUpdate内で何回オブジェクト変更しても変わらない。

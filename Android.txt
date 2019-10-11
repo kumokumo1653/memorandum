@@ -1,0 +1,6 @@
+android
+APIレベル：Androidのバージョンに対応
+レイアウトの上にビューを乗せる
+基本ビューのIDをとってビューを操作する感じ
+Androidは単スレッド通信で複数のスレッドを使うときはHandlerを使う。https://hogehuga.com/post-143/
+Handlerはスレッド間の通信に用いて呼び出しもとのスレッドのrunableをメインスレッドに送る。

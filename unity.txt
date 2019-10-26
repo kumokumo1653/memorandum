@@ -13,3 +13,5 @@ packages/manifest.jsonを初期状態に戻す。そしてエディタを再起動すると直る。
 の変数に入れてそれを個々に変更し、それをtransform.positionに入れる。
 ・オブジェクトにアタッチしたクラスはゲーム実行時、そのオブジェクトがアクティヴになったときにインスタンス化される。そこでコンストラクタが呼ばれる。
 ・GetComponentしたときもコンストラクタが呼ばれる。
+・別SceneのGameObjectを参照したいときDontDestroyonloadをつかう
+・Scene遷移の際明るさが暗くなるときはWindow/Lighting/Settings/Scene/Auto GenerateをオフにGenerateLightingを押すhttp://siro-on.hatenablog.com/entry/2017/04/24/012713

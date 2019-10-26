@@ -1,0 +1,1 @@
+・透過は子要素に継承してしまう。再度opacityで指定しても反映されない。rbga（）で対応http://www.hp-stylelink.com/news/2014/02/20140206.php

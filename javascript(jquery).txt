@@ -1,1 +1,30 @@
 ・jqueryのbody取得は$("body")
+
+requestの非同期処理
+promiseで非同期処理、resolve成功のときに返す。reject失敗のときに変える。
+const requestPromise = (options) => new Promise((resolve, reject) => {
+    request(options, (error,response,body) => {
+        if (error == null) {
+            resolve(response.body);
+        } else {
+            reject(error);
+        }
+    });
+});
+async await で同期処理っぽくかける。
+async function は promiseオブジェクトを返す。return で返すとresolve throwで返すとreject
+async function get(URI) {
+  var options = {
+  url: URI,
+  method: 'GET'
+  };
+  try{
+    let body = await requestPromise(options);
+    let resData = JSON.parse(body);
+    console.log(resData);
+    return resData;
+  }catch(error){}
+  
+}
+thenで中身が見れる。
+get().then(a =>{console.log(a)});

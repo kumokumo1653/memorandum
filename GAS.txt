@@ -1,0 +1,8 @@
+GoogleAppsScript
+サーバレスでウェブアプリがつくれる。制約が厳しいらしい。大規模運用しなきゃダイジョブ。
+
+doPost,doGetでHTTP通信のpostとgetを受け取れる。
+jsでレスポンスを受け取るときgetはそのままできるがpostはレスポンスがリダイレクトしていまい、Moved Temporarilyでないので
+postおくるときにoptionでfollowAllRedirects : true,をつける。
+
+ウェブアプリケーションとして導入でURLを発行したとき、更新するときバージョンを新しくしないと変更が更新されない。

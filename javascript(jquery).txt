@@ -28,3 +28,6 @@ async function get(URI) {
 }
 thenで中身が見れる。
 get().then(a =>{console.log(a)});
+
+
+functionブロックのそとに書いた変数はグローバル変数になり、そのまま他ファイルからもアクセスできる。

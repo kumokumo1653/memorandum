@@ -6,3 +6,9 @@
 関数に渡るときは値渡しっぽくなるようにしている。
 他言語で値渡しされるようなオブジェクトの場合、仮引数は引数の値を保存した新しいオブジェクトをインスタンスする。
 こうすると呼び出し元のオブジェクトは変更されない
+
+csv書き込みするときnewlineのオプションがないと2行担ってしまう。
+with open("'ファイル名'.csv", "w", newline="") as f:
+    w = csv.writer(f, delimiter=",")
+    for data_list in data:
+        w.writerow(data_list)

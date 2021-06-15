@@ -15,3 +15,5 @@ packages/manifest.jsonを初期状態に戻す。そしてエディタを再起動すると直る。
 ・GetComponentしたときもコンストラクタが呼ばれる。
 ・別SceneのGameObjectを参照したいときDontDestroyonloadをつかう
 ・Scene遷移の際明るさが暗くなるときはWindow/Lighting/Settings/Scene/Auto GenerateをオフにGenerateLightingを押すhttp://siro-on.hatenablog.com/entry/2017/04/24/012713
+・unityHubになってから多重起動ができなくなった。プロジェクトごとコピーしてassets,packages,projectsettingをシンボリックリンクにすると同期しながらたじゅうきどうができる。
+https://qiita.com/kingyo222/items/a794645eaf9223332aae
